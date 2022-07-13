@@ -57,6 +57,7 @@ let button = document.createElement("button");
 button.innerText = "Finalizar Compra";
 
 
+
 body.appendChild(main);
 div.append(item, valor)
 section.append(total, valorTotal)
@@ -85,10 +86,10 @@ function compras(product) {
     li.append(name, price);
 }
 
-function listarValorTotal(arrayProdutos){
+function listarValorTotal(arra){
     let resultado = 0;
-    for(let i = 0; i < arrayProdutos.length; i++){
-        let produto = arrayProdutos[i];        
+    for(let i = 0; i < arra.length; i++){
+        let produto = arra[i];        
         let valor = produto.price;
         resultado += valor;
         
